@@ -1,0 +1,145 @@
+#heading{
+	display: block;
+	background-color: beige;
+	margin: none;
+	border: none;
+	padding-left: 5%;
+	height: 50px;
+}
+
+h1{
+	color: black;
+	font-family: sans-serif;
+}
+
+.submission{
+	display: inline-block;
+	width: 200px
+	height: 40px;
+}
+
+#score{
+	width: 1000px;
+	height: 200px;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+    display: inline-block;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+/* Demo styles */
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      /* The image used */
+  background-image: url("photos/matrix.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#main{
+    width: 1000px;
+}
+
+p,ol,li{
+    color: white;
+}
+
+.form-box{
+    width: 500px;
+    background: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0  20px rgba(0, 0, 0, 0.5);
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inputcontent{
+    margin: 31px auto;
+    width: 80%;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.form-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+::placeholder{
+    color: #ccc;
+}
