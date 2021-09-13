@@ -109,6 +109,7 @@ body {
 
 p,ol,li{
     color: white;
+    font-family: sans-serif;
 }
 
 .form-box{
