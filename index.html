@@ -5,24 +5,34 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
 </head>
+<script>
+    function checkPassword(){
+    var password = document.getElementById("passwordBox");
+    var passwordText = password.value;
+    if(passwordText == "Havenof3xcellence"){
+        return true;
+    }
+    alert("Access denied! Incorrect password!");
+    return false;
+}
+</script>
 <body>
     <center>
     <div class="form-box">
-    <form class="form1" action="video.html">
         <div class="input nobottomborder">
             <div class="inputtext">
                 <h1 style="color: darkred;">Login</h1>
              </div>
 
             <div class="inputcontent">
-                <input type="password" id="password" /><br />
+                <input type="password" id="passwordBox" /><br />
             </div>
         </div>
 
         <div class="buttons">
-            <input class="orangebutton" type="submit" value="Submit" onclick="if (document.getElementById('password').value == 'Havenof3xcellence') alert('Correct Password!'); else alert('Wrong Password!');" />
+            <a style="color:darkred;" href="video.html" onclick="return checkPassword();">
+            Submit</a>
         </div>
-    </form>
 </div>
    </center>
 </body>
